@@ -1,4 +1,4 @@
-# Laravel Crawler
+# Laravel MongoDB Crawler
 
 This is a simple [Laravel](https://laravel.com/docs/9.x) application created with its built-in
 solution [Sail](https://laravel.com/docs/9.x/sail) for running projects
