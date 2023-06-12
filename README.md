@@ -1,7 +1,7 @@
 # Laravel Crawler
 
 This is a simple [Laravel](https://laravel.com/docs/9.x) application created with its built-in
-solution [Sail](https://laravel.com/docs/9.x/sail) for running your Laravel project
+solution [Sail](https://laravel.com/docs/9.x/sail) for running projects
 using [Docker](https://www.docker.com/)
 
 ## Requirements for building and running the application (Docker/Manual)
@@ -22,7 +22,8 @@ using [Docker](https://www.docker.com/)
 
 After cloning the repository get into the project directory and run:
 
-For Docker:
+**For Docker:**
+
 `php composer install`
 
 `./vendor/bin/sail up -d`
@@ -36,14 +37,14 @@ For Docker:
 Go to [http://localhost](http://localhost) in order to see the application running.
 
 
-For Manual:
+
+**For Manual:**
+
 `php composer install`
 
 `composer require jenssegers/mongodb`
 
 `php artisan serve`
-
-## Then finally test the application
 
 Go to [http://localhost](http://localhost) in order to see the application running.
 
@@ -51,10 +52,13 @@ Go to [http://localhost](http://localhost) in order to see the application runni
 ## ENV Configuration
 
 MongoDB Database Name:
-DB_DATABASE=laravel_sail
+
+`DB_DATABASE=laravel_sail`
 
 MongoDB Connection String:
-MONGO_DB_DSN=mongodb://mongo:27017
+
+`MONGO_DB_DSN=mongodb://mongo:27017`
 
 Timeout for each http crawel request:
-HTTP_TIMEOUT_SECONDS=2
+
+`HTTP_TIMEOUT_SECONDS=2`
